@@ -1,72 +1,94 @@
-import cpmpy as cp
-import numpy as np
+import json
 from datetime import datetime, timedelta
 
-# -----------------------------
-# Sample Input
-# -----------------------------
-course_json = {
-    "course": {
-        "title": "Sample Course",
-        "topics": [
-            {"title": "Topic 1", "duration": 10},
-            {"title": "Topic 2", "duration": 30},
-            {"title": "Topic 3", "duration": 60},
-        ]
-    }
-}
-
-user_json = {
+# ------------------- Sample Input -------------------
+user_input_json = {
     "user": {
         "username": "john_doe",
         "start_date": "2025-05-01",
-        "end_date": "2025-05-02",
-        "daily_time": 60
+        "daily_time": 45
     }
 }
 
-# -----------------------------
-# Preprocessing
-# -----------------------------
-topics = course_json["course"]["topics"]
-durations = [t["duration"] for t in topics]
-num_topics = len(topics)
+course_json = {
+    "course_id": "C101",
+    "topics": [
+        {"topic_id": "T1", "name": "Intro to AI", "duration": 30},
+        {"topic_id": "T2", "name": "History of AI", "duration": 20},
+        {"topic_id": "T3", "name": "Machine Learning Basics", "duration": 45},
+        {"topic_id": "T4", "name": "Neural Networks", "duration": 60}
+    ],
+    "prerequisite_order": ["T1", "T2", "T3", "T4"]
+}
+# -----------------------------------------------------
 
-start_date = datetime.strptime(user_json["user"]["start_date"], "%Y-%m-%d")
-end_date = datetime.strptime(user_json["user"]["end_date"], "%Y-%m-%d")
-total_days = (end_date - start_date).days + 1
-daily_time = user_json["user"]["daily_time"]
+def build_optimized_schedule(user_input, course):
+    start_date = datetime.strptime(user_input["user"]["start_date"], "%Y-%m-%d")
+    daily_limit = user_input["user"]["daily_time"]
+    topics_dict = {t["topic_id"]: t["duration"] for t in course["topics"]}
 
-# -----------------------------
-# Model Setup
-# -----------------------------
-alloc = cp.intvar(0, max(durations), shape=(total_days, num_topics), name="alloc")
-model = cp.Model()
+    schedule = {}
+    current_date = start_date
+    remaining_time = daily_limit
+    day_plan = {"date": current_date.strftime("%Y-%m-%d"), "topics": [], "total_duration": 0, "topic_details": []}
 
-# 1. Each topic must be fully studied
-for t in range(num_topics):
-    model += (cp.sum(alloc[:, t]) == durations[t])
+    # Go through each topic in order
+    for topic_id in course["prerequisite_order"]:
+        topic_duration = topics_dict[topic_id]
+        time_left = topic_duration
 
-# 2. Don’t study more than allowed time per day
-for d in range(total_days):
-    model += (cp.sum(alloc[d, :]) <= daily_time)
+        while time_left > 0:
+            if remaining_time == 0:
+                # Save current day and start new day
+                schedule[day_plan["date"]] = day_plan
+                current_date += timedelta(days=1)
+                remaining_time = daily_limit
+                day_plan = {"date": current_date.strftime("%Y-%m-%d"), "topics": [], "total_duration": 0, "topic_details": []}
 
-# 3. Must finish Topic T before starting Topic T+1
-for t in range(num_topics - 1):
-    for d in range(total_days):
-        model += (cp.sum(alloc[:d+1, t]) < durations[t]).implies(cp.sum(alloc[:d+1, t+1]) == 0)
+            used_time = min(time_left, remaining_time)
+            time_left -= used_time
+            remaining_time -= used_time
 
-# -----------------------------
-# Solve and Print
-# -----------------------------
-if model.solve():
-    print("🧠 Personalized Learning Plan:")
-    for d in range(total_days):
-        date_str = (start_date + timedelta(days=d)).strftime("%Y-%m-%d")
-        print(f"\n📅 Day {d + 1} ({date_str}):")
-        for t in range(num_topics):
-            minutes = alloc[d][t].value()
-            if minutes > 0:
-                print(f"  - {topics[t]['title']} ({minutes} mins)")
-else:
-    print("❌ No feasible schedule found.")
+            # Log topic fragment
+            if topic_id not in day_plan["topics"]:
+                day_plan["topics"].append(topic_id)
+
+            day_plan["topic_details"].append({
+                "topic": topic_id,
+                "time_spent": used_time
+            })
+            day_plan["total_duration"] += used_time
+
+    # Add last day
+    if day_plan["total_duration"] > 0:
+        schedule[day_plan["date"]] = day_plan
+
+    # Return as sorted list
+        sorted_dates = sorted(schedule.keys())
+
+        # Build final output
+        final_output = {
+            "total_days_spent": len(sorted_dates),
+            "schedule": [schedule[date] for date in sorted_dates]
+        }
+
+        return final_output
+    
+
+# Run and print result
+daily_schedule = build_optimized_schedule(user_input_json, course_json)
+print(json.dumps(daily_schedule, indent=2))
+
+# main.py
+from database import init_db
+
+def test_database():
+    try:
+        print("🔄 Initializing database...")
+        init_db()
+        print("✅ Success! Connected and ensured tables exist.")
+    except Exception as e:
+        print("❌ Error:", e)
+
+if __name__ == "__main__":
+    test_database()
