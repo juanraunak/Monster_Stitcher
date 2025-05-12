@@ -1,5 +1,8 @@
 import json
 from datetime import datetime, timedelta
+from sqlalchemy.orm import Session
+from database.connection import SessionLocal
+from database.models import UserPlan
 
 # ------------------- Sample Input -------------------
 user_input_json = {
@@ -79,16 +82,23 @@ def build_optimized_schedule(user_input, course):
 daily_schedule = build_optimized_schedule(user_input_json, course_json)
 print(json.dumps(daily_schedule, indent=2))
 
-# main.py
-from database import init_db
-
-def test_database():
+def save_plan_to_db(plan_json, user_id="user_123"):
+    db: Session = SessionLocal()
     try:
-        print("🔄 Initializing database...")
-        init_db()
-        print("✅ Success! Connected and ensured tables exist.")
+        print("🔄 Saving plan to database...")  # This message is shown when the function starts
+        new_plan = UserPlan(
+            user_id=user_id,
+            plan_json=plan_json  # This is where the daily_schedule is passed
+        )
+        print("Adding to database:", new_plan)  # This will print the new_plan object
+        db.add(new_plan)
+        db.commit()
+        print("✅ Plan saved to database.")
     except Exception as e:
-        print("❌ Error:", e)
+        db.rollback()
+        print("❌ Failed to save:", e)
+    finally:
+        db.close()
 
-if __name__ == "__main__":
-    test_database()
+# Save the daily schedule (plan) to the database
+save_plan_to_db(plan_json=daily_schedule)
