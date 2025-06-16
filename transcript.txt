@@ -1,0 +1,230 @@
+
+00:01
+so how many different types of forces are there in physics now i'm not going to go over all of them because there are some that we haven't discovered yet but i'm going to go over the most common ones that are taught in a typical physics course and the first type of force we're going to talk about is
+
+00:22
+an applied force so let's say if you have a person and basically this person is pushing the box and so that is called an applied force and that can come in many different forms the next type of force is one that occurs through a rope so instead of pushing an object imagine if you're pulling this box
+
+00:50
+to the right anytime you have a force acting through a rope that force is known as a tension force so that's the second type of force you need to be familiar with now imagine if we have a block resting across a horizontal surface are there any forces acting on this block
+
+01:17
+let's say if we don't apply a horizontal force to it are there any forces in play here and there are the block has a weight force a downward weight force that it's pressed against the floor and that weight force is equal to the mass times the gravitational acceleration now the floor
+
+01:40
+exerts an opposite force equal in magnitude known as the normal force so the normal force is always a force that is exerted by a surface in response to another force so it's a reactive force so to speak now on an incline let's say we have an angle theta relative to the horizontal the normal force
+
+02:10
+will extend in this direction it's always perpendicular to the surface and in this case the normal force will depend on the weight of the object and also the angle of the incline it turns out that is equal to the weight mg times the cosine of that angle so far we've covered four forces the
+
+02:31
+applied force the tension force the normal force and the weight force but what other forces are there that we need to learn in physics now imagine a warm summer day and you're inside your home and you need to move this large box across a rough carpet and so you apply a force to move the box but
+
+03:03
+it doesn't move and you try to push it harder and it still doesn't move the question is why what's preventing you from moving the box now based on newton's third law for every action force there's an equal but opposite reaction force so if you're applying a force to push this box and it doesn't move
+
+03:26
+there must be some other force that's preventing this box from moving and in this case this force is known as static friction static friction is present if the surface between the block and the ground or in this case the carpet if they're not sliding past each other and if there's an applied force
+
+03:53
+that doesn't exceed the maximum static frictional force static friction is basically an inequality is less than or equal to the coefficient of static friction which is based on the interaction between these two surfaces times the normal force of the object now static friction can be increased or
+
+04:18
+decrease because the normal force can be increased or decreased now earlier we said that the normal force is dependent on the weight of the object and that's true provided if there's no other vertical forces on this box however let's say if i were to apply a downward force on this box
+
+04:43
+then the normal force will increase by that amount and so if i were to press down on that box the static frictional force will increase now at the same time i can reduce the amount of static friction between the box and the carpet and that's by lifting the box off the ground
+
+05:07
+or even if i don't lift off just by reducing the normal force so let's say if i had a rope and i pull the box upward with a rope it doesn't have to leave the ground but basically relieve the stress that the block puts on the carpet so if i lift up with an upward force the normal force
+
+05:30
+will decrease by that tension force and thus as a result if the normal force decreases the static frictional force will decrease as well and so that's how you can reduce friction is by lifting the object off the ground now the next force that we're going to talk about is the kinetic frictional force
+
+05:54
+so if we go back to this example and if this individual applies a force if the box doesn't move as we said before static friction is the reason that's preventing it from moving now if the applied force exceeds the maximum static frictional force then the box will begin to slide against the carpet
+
+06:21
+at that time there's going to be another frictional force present and it's called kinetic friction whenever you hear the word kinetic it means motion it means something is moving static means stationary not moving so static friction is present if these two surfaces are not sliding past each other
+
+06:40
+but if they are sliding past each other kinetic friction is present now the formula for kinetic friction is very similar to static friction it's equal to mu k the coefficient of kinetic friction times the normal force whereas static friction is an inequality so static friction will equal the
+
+07:03
+applied force until the applied force exceeds the maximum static frictional force so let's say if the maximum static frictional force was 100 newtons let me put max if the applied force is 50 the static frictional force will be 50. if the applied force is 80 the static frictional force will be 80.
+
+07:29
+if it's a hundred this would be a hundred if the applied force is 120 then the box will begin to slide and you will no longer have static friction but now you have kinetic friction which is equal to a fixed value so if you increase the applied force this value will not change it's not an inequality
+
+07:52
+it's equal to a fixed number now the next type of force that we're going to talk about has to do with springs so if you have a spring and let's say this is the natural length of the spring if you apply a force to stretch the spring you're going to feel a restoring force that wants to
+
+08:15
+bring the spring back to equilibrium to its original position and so this is another type of force that is present and this is associated with something called hooke's law which states that the restoring force is proportional to the spring constant k and x where x is the difference between
+
+08:42
+the original position and the new position now k could be a value like 100 newtons per meter so that's the spring constant that means that it requires 100 newtons of force to stretch the spring by one meter or to compress it by one meter so let's say this is the original spring and let's say
+
+09:12
+k is still 100 newtons per meter and let's say i stretch the spring by 0.1 meters so that is my x value that is the difference in distance between the original point where it's it's naturally located at and the new point so basically x is the amount that i stretch or compress the
+
+09:44
+spring from its natural length now in order to do this i need to apply a force that's equal to the restoring force but opposite in direction so the applied force will be k times x so it's a hundred newtons per meter times 0.1 meters so basically i need to apply a force
+
+10:13
+of 10 newtons to get the job done now there's going to be a restoring force of negative 10 newtons the reason why it's negative is because it's going in the opposite direction and so that's why in this equation we have a negative sign when dealing with the restoring force
+
+10:33
+but the applied force will have a positive sign because based on the way it's drawn the applied force is directed in the positive x direction now what happens to an object when the velocity of the object and the force that's acting on the object are in the same direction what's going to happen to
+
+10:54
+the object now compare that let's say if the object is moving to the right but if there's a force that's acting on it but towards the left in the first case when the force and velocity vectors are in the same direction the object is going to speed up when force and velocity
+
+11:18
+when they're opposite to each other the object is going to slow down but now what happens if the force vector is perpendicular to the velocity vector will it speed up or slow down in this case the force has no effect on the speed of the object however it can affect the direction of the object
+
+11:47
+so in this case the object will turn and a force that causes an object to turn in a circle is known as a centripetal force now the centripetal force is not an actual force itself but it's created or provided by other types of forces now imagine if you have a rope and a ball attached to the rope
+
+12:19
+and you decide to swing it in a circle what provides the centripetal force in this case now at this point the object is moving here in the positive y direction however there is a force called the centripetal force that is directed towards the center of the circle and so the object will not go in this
+
+12:47
+direction but rather it's going to turn in the direction of the centripetal force now once the object reaches this point it's moving towards the negative x direction but the rope is going to be over here and so the centripetal force is still pulling it towards the center
+
+13:04
+and so once again the object is going to turn and so this process will be repeated so when the object is on the left side the centripetal force will be directed towards the right or towards the center and the velocity vector will now be going down and so the centripetal force is always
+
+13:24
+directed towards the center of the circle because it keeps the object moving in a circle but as we said before the centripetal force is not in itself a force it's always created by another force so what is the force that provides the centripetal force in this example now here's a hint
+
+13:48
+what is the force that always acts through a rope there's always a tension force acting through a rope so in this example tension provides the centripetal force now i want to go over two different categories of forces so you have contact forces and you have long range forces
+
+14:16
+so we covered some examples of contact forces in the beginning we talked about a person applying a force to push a box and so that applied force is a contact force because it can only exist when the person is in contact with the box now a long range force doesn't require contact to have an effect
+
+14:42
+for instance gravity is a long-range force so let's say this is the ground which is the surface of the earth and there's a ball gravity will cause the ball to fall and so gravity exerts a force on the ball which is known as the weight force and the ball doesn't have to be in
+
+15:05
+contact with the earth it could be in the air and yet the earth can still exert a gravitational force on the ball so gravity is an example of a long range force another example of a long range force is the electric force so let's say if we have a positive charge next to a negative charge
+
+15:37
+these two will feel a force of attraction and so they feel an electric force that accelerates them toward each other and they don't have to be in contact to fill this force or to be affected by it and so the electric force is a long range force now the electric force is equal to k
+
+16:03
+times q1 times q2 over r squared now k is a constant it's equal to nine times ten to the nine and uh q1 and q2 they represent the charge of these two particles or two objects and the units for that is coulombs and r is the distance between them now there's two ways in which you can
+
+16:29
+increase the electric force between these two charged particles one by increasing the magnitude of the charge on each of them that will increase the electric force between them or if you bring the charges closer together the force of attraction that they will fill will be greater so if you decrease r
+
+16:52
+the electric field i mean that's what you feel but the electric force will increase in magnitude now let's go back and talk about gravity so we saw that there is an electric force between two objects that have a charge if they have opposite charges the two objects will be attracted to each other
+
+17:17
+but between two like charges they will be repelled so the electric force can be a force of attraction or a force of repulsion the gravitational force is a force of attraction and it exists between two objects with mass so let's say if we have the sun let me use a different color for that and earth
+
+17:48
+so between two objects with large amount of matter there's going to be a force of attraction known as gravity and so gravity brings matter together and the formula for it is f is equal to the universal gravitation constant times m1 times m2 over r squared where m1 and m2 are the masses of these
+
+18:13
+two objects so if you increase the mass of an object the gravitational force will increase and if you decrease the distance between them the gravitational force will increase as well and so the more massive the sun is the greater the gravitational force that it will have on the earth
+
+18:35
+so its pull on the earth will be stronger now let's say this is the ground which as we said before is the surface of the earth and let's go back to the example where we had the ball in the air now the earth will pull the ball down it's going to exert a gravitational
+
+18:58
+force on the ball which will accelerate it in the negative y direction now based on the last example where we saw that the earth and the sun they both exerted a gravitational force toward each other that means that the ball exerts a gravitational force on the earth
+
+19:16
+causing the earth to move towards the ball now granted the earth is much more massive than the ball so it's not going to move by much it's going to be negligible but there is a force that pushes the earth towards the ball but because the mass of the ball is so little it's insignificant
+
+19:37
+but yet the ball is in free fall towards the earth it's fallen in that direction so if the ball is falling towards the earth what about the moon can the same be said of that why doesn't the moon just fall to the earth how does it remain in orbit because this ball if you put in the air
+
+20:02
+it's just going to fall towards the earth so let's draw another picture so let's say this is the earth and this is the ball so if we put the ball in outer space it's simply going to drop to the earth it's going to be in free fall it's going to crash and that's it but the moon if we put it here
+
+20:27
+it too is in free fall towards the earth but it doesn't crash into the earth which is a very good thing because that would be catastrophic but why doesn't the moon not fall towards the earth like the ball and the answer is velocity the moon is moving in this direction at this instant in time
+
+20:49
+and as we saw in a previous example whenever the force and velocity vectors are perpendicular if they're 90 degrees apart from each other the object is going to turn and so the moon turns in a circular path and that's how the moon can remain in orbit it's due to the balance of the gravitational force
+
+21:12
+and the velocity of the moon now what other type of force do we have here because there exists a certain type of force any time that force is pointed towards the center of a circle if you recall this is the centripetal force now the centripetal force is always caused by another force
+
+21:36
+so in this particular example between the earth and the moon gravity provides the centripetal force for the moon gravity keeps the moon in orbit around the earth if gravity wasn't present the moon would fly off towards outer space and if the moon didn't have this velocity
+
+21:59
+it would free fall towards the earth crashing into it so due to the balance of the moon's speed and the gravity between the earth and the moon it remains in orbit now the next type of force that you'll hear about in a typical physics course is the magnetic force now
+
+22:20
+i'm sure you're familiar with magnetism at some point in your life you played with uh magnets and you know that the north pole of one magnet is attracted to the south pole of another and so these two magnets will feel a force of attraction likewise if you have two bar magnets with the north pole
+
+22:45
+facing each other these two will feel a force of repulsion and so that's one example of a magnetic force that you've seen but in a typical physics course you're going to see how magnetism relates to charges and let's say we have a magnetic field represented by the symbol b
+
+23:10
+and it's directed into the page so that's what that x means in physics if you see this symbol that means that the magnetic field is coming out of the page so in the three-dimensional system we have the z-axis the y-axis and the x-axis now into the page means that the magnetic field is going in the
+
+23:37
+negative z direction out of the page means that it's going in a positive z direction so just keep that in mind now let's say if we have a proton and this proton is moving to the right now using the right hand rule which i won't go into too much detail in this video but
+
+24:02
+you can look up another video i have on youtube that explains it just type in right hand rule magnetic fields and it should come up so if we have a proton moving in a positive x direction and a magnetic field going in into the page in the negative z direction using the right hand rule the magnetic
+
+24:23
+field will exert a magnetic force fb in the positive y direction now an electron if it's moving towards the right it will fill a magnetic force in the opposite direction to a proton that is in the negative y direction so what you need to understand is this if you have a charged particle that is
+
+24:54
+moving in a magnetic field the magnetic field will exert a force a magnetic force on that charged particle if it's not moving it will not exert a magnetic force and the magnetic field the velocity and the magnetic force they're all perpendicular to each other one is in the x direction the others in
+
+25:16
+the y and the third one is in a z direction so they always are perpendicular to each other and you can create a magnetic field just by using a bar magnet so let's say this is the north pole and this is the south pole so the magnetic field extends out from the north pole
+
+25:34
+and it flows towards the south pole so if you have another magnet this will also have its own magnetic field so if we focus on the magnetic field between these two magnets in this region the magnetic field emanating from the magnet on the left is going in the positive x direction
+
+26:08
+and the magnetic field entering the second magnet on the right is also going in a positive x direction and so it has an additive effect so the magnetic field in its region is very strong now if we were to place let's say a moving charge in that region so we have the magnetic field going in
+
+26:29
+the positive x direction and let's say there's a proton in that region and that proton is moving in the positive y direction and that means that it's going to fill a magnetic force in a z direction so using the right hand rule let me use it real quick this is going to be into the page
+
+26:56
+and so we can represent it with this symbol so the magnetic force is going in the negative z direction and if we were to draw a three-dimensional coordinate system so this is the positive z-direction this is the y-direction and this is the x-direction the magnetic field
+
+27:17
+is going in the positive x-direction the proton which i'm going to put in the center it's moving in the positive y direction and the magnetic force is being directed in the z direction so hopefully that three-dimensional coordinate system can give you a better visual of what's happening here
+
+27:49
+now going back to the first example where we had the proton moving to the right and we had a magnetic field going into the page and we said that there was a magnetic force in the positive y direction so notice that the force and the velocity vectors are perpendicular so in this case
+
+28:08
+the object will turn so whenever you have a moving charged particle in a magnetic field it follows a circular path the magnetic field becomes a centripetal force it keeps the particle moving in a circle and so let me redraw the proton here so if the proton is moving in this
+
+28:30
+direction there's a magnetic force that's going to be going in a positive y direction and so the proton is going to turn and it's going to follow a circular path so when the proton is in this region the magnetic field will be directed towards the center and the proton is moving upward
+
+28:52
+and then once it's at the top its velocity vector will be directed to the negative x-axis and the magnetic field will be directed towards the center and so the magnetic force is acting in such a way to keep the proton moving in a circular path so we saw three examples of other forces
+
+29:17
+providing the centripetal force we saw a tension where if we have a ball attached to a rope and if you swing it in a circle tension provides this centripetal force in the second example we saw the situation between the earth and the moon how the moon was moving in a circle around the earth and so
+
+29:42
+gravity provided the centripetal force in that case and for this example the magnetic force is keeping the proton moving in a circle so the magnetic force provides the centripetal force so make sure you understand that the centripetal force is not a force in itself
+
+30:01
+but it's generated by another force it's any type of force that can keep an object moving in a circle so that's basically it for this video and for those of you who haven't done so already feel free to subscribe to this channel and don't forget to click on the notification bell
+
+30:22
+in addition if you want more practice problems or just concepts on physics check out my new physics video playlist so you can look at the channel but i'm just gonna post the link in the description section so you can just find it quickly that way so feel free to take a look at that when you get a
+
+30:41
+chance thanks for watching
+
+
